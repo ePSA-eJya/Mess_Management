@@ -1,19 +1,19 @@
 package app
 
 import (
+	"github.com/ePSA-eJya/Mess_Management/internal/database"
 	"github.com/gofiber/fiber/v2"
 	"google.golang.org/grpc"
 	"gorm.io/gorm"
 
-	"github.com/MingPV/clean-go-template/internal/entities"
-	GrpcOrderHandler "github.com/MingPV/clean-go-template/internal/order/handler/grpc"
-	orderRepository "github.com/MingPV/clean-go-template/internal/order/repository"
-	orderUseCase "github.com/MingPV/clean-go-template/internal/order/usecase"
-	"github.com/MingPV/clean-go-template/pkg/config"
-	"github.com/MingPV/clean-go-template/pkg/database"
-	"github.com/MingPV/clean-go-template/pkg/middleware"
-	"github.com/MingPV/clean-go-template/pkg/routes"
-	orderpb "github.com/MingPV/clean-go-template/proto/order"
+	"github.com/ePSA-eJya/Mess_Management/internal/entities"
+	GrpcOrderHandler "github.com/ePSA-eJya/Mess_Management/internal/order/handler/grpc"
+	orderRepository "github.com/ePSA-eJya/Mess_Management/internal/order/repository"
+	orderUseCase "github.com/ePSA-eJya/Mess_Management/internal/order/usecase"
+	"github.com/ePSA-eJya/Mess_Management/pkg/config"
+	"github.com/ePSA-eJya/Mess_Management/pkg/middleware"
+	"github.com/ePSA-eJya/Mess_Management/pkg/routes"
+	orderpb "github.com/ePSA-eJya/Mess_Management/proto/order"
 )
 
 // rest

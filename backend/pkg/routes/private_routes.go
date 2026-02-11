@@ -1,10 +1,10 @@
 package routes
 
 import (
-	userHandler "github.com/MingPV/clean-go-template/internal/user/handler/rest"
-	userRepository "github.com/MingPV/clean-go-template/internal/user/repository"
-	userUseCase "github.com/MingPV/clean-go-template/internal/user/usecase"
-	middleware "github.com/MingPV/clean-go-template/pkg/middleware"
+	userHandler "github.com/ePSA-eJya/Mess_Management/internal/user/handler/rest"
+	userRepository "github.com/ePSA-eJya/Mess_Management/internal/user/repository"
+	userUseCase "github.com/ePSA-eJya/Mess_Management/internal/user/usecase"
+	middleware "github.com/ePSA-eJya/Mess_Management/pkg/middleware"
 
 	"github.com/gofiber/fiber/v2"
 	"gorm.io/gorm"

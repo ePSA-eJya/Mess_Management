@@ -6,13 +6,13 @@ import (
 	"net/http/httptest"
 	"testing"
 
+	"github.com/ePSA-eJya/Mess_Management/internal/database"
 	"github.com/gofiber/fiber/v2"
 	"github.com/stretchr/testify/suite"
 	"gorm.io/gorm"
 
-	"github.com/MingPV/clean-go-template/internal/app"
-	"github.com/MingPV/clean-go-template/pkg/config"
-	"github.com/MingPV/clean-go-template/pkg/database"
+	"github.com/ePSA-eJya/Mess_Management/internal/app"
+	"github.com/ePSA-eJya/Mess_Management/pkg/config"
 )
 
 type PublicRoutesTestSuite struct {

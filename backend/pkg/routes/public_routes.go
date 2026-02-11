@@ -5,14 +5,14 @@ import (
 	"gorm.io/gorm"
 
 	// Order
-	orderHandler "github.com/MingPV/clean-go-template/internal/order/handler/rest"
-	orderRepository "github.com/MingPV/clean-go-template/internal/order/repository"
-	orderUseCase "github.com/MingPV/clean-go-template/internal/order/usecase"
+	orderHandler "github.com/ePSA-eJya/Mess_Management/internal/order/handler/rest"
+	orderRepository "github.com/ePSA-eJya/Mess_Management/internal/order/repository"
+	orderUseCase "github.com/ePSA-eJya/Mess_Management/internal/order/usecase"
 
 	// User
-	userHandler "github.com/MingPV/clean-go-template/internal/user/handler/rest"
-	userRepository "github.com/MingPV/clean-go-template/internal/user/repository"
-	userUseCase "github.com/MingPV/clean-go-template/internal/user/usecase"
+	userHandler "github.com/ePSA-eJya/Mess_Management/internal/user/handler/rest"
+	userRepository "github.com/ePSA-eJya/Mess_Management/internal/user/repository"
+	userUseCase "github.com/ePSA-eJya/Mess_Management/internal/user/usecase"
 )
 
 func RegisterPublicRoutes(app fiber.Router, db *gorm.DB) {

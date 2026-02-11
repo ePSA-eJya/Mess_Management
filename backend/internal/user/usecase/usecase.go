@@ -4,9 +4,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/MingPV/clean-go-template/internal/entities"
-	"github.com/MingPV/clean-go-template/internal/user/repository"
-	"github.com/MingPV/clean-go-template/pkg/apperror"
+	"github.com/ePSA-eJya/Mess_Management/internal/entities"
+	"github.com/ePSA-eJya/Mess_Management/internal/user/repository"
+	"github.com/ePSA-eJya/Mess_Management/pkg/apperror"
 	"github.com/golang-jwt/jwt/v5"
 	"golang.org/x/crypto/bcrypt"
 )

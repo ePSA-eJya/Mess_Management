@@ -1,7 +1,7 @@
 package responses
 
 import (
-	appError "github.com/MingPV/clean-go-template/pkg/apperror"
+	appError "github.com/ePSA-eJya/Mess_Management/pkg/apperror"
 	"github.com/gofiber/fiber/v2"
 )
 

@@ -3,11 +3,11 @@ package handler
 import (
 	"fmt"
 
-	"github.com/MingPV/clean-go-template/internal/entities"
-	"github.com/MingPV/clean-go-template/internal/user/dto"
-	"github.com/MingPV/clean-go-template/internal/user/usecase"
-	"github.com/MingPV/clean-go-template/pkg/apperror"
-	"github.com/MingPV/clean-go-template/pkg/responses"
+	"github.com/ePSA-eJya/Mess_Management/internal/entities"
+	"github.com/ePSA-eJya/Mess_Management/internal/user/dto"
+	"github.com/ePSA-eJya/Mess_Management/internal/user/usecase"
+	"github.com/ePSA-eJya/Mess_Management/pkg/apperror"
+	"github.com/ePSA-eJya/Mess_Management/pkg/responses"
 	"github.com/gofiber/fiber/v2"
 )
 

@@ -5,7 +5,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/MingPV/clean-go-template/internal/entities"
+	"github.com/ePSA-eJya/Mess_Management/internal/entities"
 	_ "github.com/jackc/pgx/v5/stdlib"
 	"github.com/joho/godotenv"
 	"gorm.io/driver/postgres"

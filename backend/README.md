@@ -37,7 +37,7 @@ The script will guide you through renaming the project. For more details, see [d
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/MingPV/clean-go-template.git
+    git clone https://github.com/ePSA-eJya/Mess_Management.git
     cd clean-go-template
     ```
 

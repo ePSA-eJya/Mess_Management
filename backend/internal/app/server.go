@@ -3,8 +3,8 @@ package app
 import (
 	"log"
 
-	"github.com/MingPV/clean-go-template/pkg/database"
-	"github.com/MingPV/clean-go-template/utils"
+	"github.com/ePSA-eJya/Mess_Management/internal/database"
+	"github.com/ePSA-eJya/Mess_Management/utils"
 )
 
 func Start() {
