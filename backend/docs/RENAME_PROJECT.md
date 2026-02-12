@@ -29,7 +29,7 @@ If you prefer to rename manually or the script doesn't work for you, follow thes
 
 Open `go.mod` and change the module name from:
 ```go
-module github.com/MingPV/clean-go-template
+module github.com/ePSA-eJya/Mess_Management
 ```
 
 To your new name, for example:
@@ -48,17 +48,17 @@ go mod tidy
 
 **Manual - Using VS Code:**
 - Press `Cmd+Shift+H` (Mac) or `Ctrl+Shift+H` (Windows/Linux)
-- Find: `github.com/MingPV/clean-go-template`
+- Find: `github.com/ePSA-eJya/Mess_Management`
 - Replace with: `github.com/your-username/your-project-name`
 - Select "Replace All"
 
 **Manual - Using Command Line:**
 ```bash
 # Using sed (Mac/Linux)
-find . -type f -name "*.go" -exec sed -i '' 's|github.com/MingPV/clean-go-template|github.com/your-username/your-project-name|g' {} +
+find . -type f -name "*.go" -exec sed -i '' 's|github.com/ePSA-eJya/Mess_Management|github.com/your-username/your-project-name|g' {} +
 
 # Or using grep + sed
-grep -rl "github.com/MingPV/clean-go-template" . --include="*.go" | xargs sed -i '' 's|github.com/MingPV/clean-go-template|github.com/your-username/your-project-name|g'
+grep -rl "github.com/ePSA-eJya/Mess_Management" . --include="*.go" | xargs sed -i '' 's|github.com/ePSA-eJya/Mess_Management|github.com/your-username/your-project-name|g'
 ```
 
 ### 3. Update Proto File

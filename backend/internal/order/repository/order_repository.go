@@ -1,6 +1,6 @@
 package repository
 
-import "github.com/MingPV/clean-go-template/internal/entities"
+import "github.com/ePSA-eJya/Mess_Management/internal/entities"
 
 type OrderRepository interface {
 	Save(order *entities.Order) error

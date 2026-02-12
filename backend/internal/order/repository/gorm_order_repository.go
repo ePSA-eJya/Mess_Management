@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"github.com/MingPV/clean-go-template/internal/entities"
+	"github.com/ePSA-eJya/Mess_Management/internal/entities"
 	"gorm.io/gorm"
 )
 

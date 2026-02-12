@@ -1,6 +1,6 @@
 package usecase
 
-import "github.com/MingPV/clean-go-template/internal/entities"
+import "github.com/ePSA-eJya/Mess_Management/internal/entities"
 
 type OrderUseCase interface {
 	FindAllOrders() ([]*entities.Order, error)

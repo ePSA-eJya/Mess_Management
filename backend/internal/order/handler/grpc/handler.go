@@ -3,10 +3,10 @@ package grpc
 import (
 	"context"
 
-	"github.com/MingPV/clean-go-template/internal/entities"
-	"github.com/MingPV/clean-go-template/internal/order/usecase"
-	"github.com/MingPV/clean-go-template/pkg/apperror"
-	orderpb "github.com/MingPV/clean-go-template/proto/order"
+	"github.com/ePSA-eJya/Mess_Management/internal/entities"
+	"github.com/ePSA-eJya/Mess_Management/internal/order/usecase"
+	"github.com/ePSA-eJya/Mess_Management/pkg/apperror"
+	orderpb "github.com/ePSA-eJya/Mess_Management/proto/order"
 	"google.golang.org/grpc/status"
 )
 

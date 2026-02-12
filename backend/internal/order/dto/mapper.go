@@ -1,6 +1,6 @@
 package dto
 
-import "github.com/MingPV/clean-go-template/internal/entities"
+import "github.com/ePSA-eJya/Mess_Management/internal/entities"
 
 func ToOrderResponse(order *entities.Order) *OrderResponse {
 	return &OrderResponse{

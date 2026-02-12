@@ -8,7 +8,7 @@ BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 # Old project name
-OLD_MODULE="github.com/MingPV/clean-go-template"
+OLD_MODULE="github.com/ePSA-eJya/Mess_Management"
 OLD_API_TITLE="CleanGO API"
 OLD_API_DESC="CleanGO project"
 
@@ -118,7 +118,7 @@ if [ -f "README.md" ]; then
     $SED_IN_PLACE "1s|.*|# $NEW_PROJECT_NAME|" README.md
     
     # Update git clone URL
-    $SED_IN_PLACE "s|git clone https://github.com/MingPV/clean-go-template.git|git clone https://github.com/$(echo $NEW_MODULE | cut -d'/' -f2-3 | tr '/' '/').git|g" README.md
+    $SED_IN_PLACE "s|git clone https://github.com/ePSA-eJya/Mess_Management.git|git clone https://github.com/$(echo $NEW_MODULE | cut -d'/' -f2-3 | tr '/' '/').git|g" README.md
     
     # Update directory name in README
     $SED_IN_PLACE "s|cd clean-go-template|cd $NEW_PROJECT_NAME|g" README.md

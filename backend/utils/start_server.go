@@ -7,7 +7,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/MingPV/clean-go-template/pkg/config"
+	"github.com/ePSA-eJya/Mess_Management/pkg/config"
 
 	"github.com/gofiber/fiber/v2"
 	"google.golang.org/grpc"

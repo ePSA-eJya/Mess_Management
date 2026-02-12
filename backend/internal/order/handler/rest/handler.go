@@ -3,12 +3,12 @@ package rest
 import (
 	"strconv"
 
-	"github.com/MingPV/clean-go-template/pkg/apperror"
+	"github.com/ePSA-eJya/Mess_Management/pkg/apperror"
 
-	"github.com/MingPV/clean-go-template/internal/entities"
-	"github.com/MingPV/clean-go-template/internal/order/dto"
-	"github.com/MingPV/clean-go-template/internal/order/usecase"
-	responses "github.com/MingPV/clean-go-template/pkg/responses"
+	"github.com/ePSA-eJya/Mess_Management/internal/entities"
+	"github.com/ePSA-eJya/Mess_Management/internal/order/dto"
+	"github.com/ePSA-eJya/Mess_Management/internal/order/usecase"
+	responses "github.com/ePSA-eJya/Mess_Management/pkg/responses"
 	"github.com/gofiber/fiber/v2"
 )
 

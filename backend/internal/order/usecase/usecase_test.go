@@ -3,10 +3,10 @@ package usecase_test
 import (
 	"testing"
 
-	"github.com/MingPV/clean-go-template/internal/entities"
-	"github.com/MingPV/clean-go-template/internal/order/repository"
-	"github.com/MingPV/clean-go-template/internal/order/usecase"
-	"github.com/MingPV/clean-go-template/pkg/database"
+	"github.com/ePSA-eJya/Mess_Management/internal/database"
+	"github.com/ePSA-eJya/Mess_Management/internal/entities"
+	"github.com/ePSA-eJya/Mess_Management/internal/order/repository"
+	"github.com/ePSA-eJya/Mess_Management/internal/order/usecase"
 	"github.com/stretchr/testify/suite"
 	"gorm.io/gorm"
 )

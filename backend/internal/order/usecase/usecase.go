@@ -1,8 +1,8 @@
 package usecase
 
 import (
-	"github.com/MingPV/clean-go-template/internal/entities"
-	"github.com/MingPV/clean-go-template/internal/order/repository"
+	"github.com/ePSA-eJya/Mess_Management/internal/entities"
+	"github.com/ePSA-eJya/Mess_Management/internal/order/repository"
 )
 
 // OrderService
