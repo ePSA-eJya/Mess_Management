@@ -1,0 +1,88 @@
+syntax = "proto3";
+
+package student;
+
+option go_package = "github.com/ePSA-eJya/Mess_Management/proto/studentpb";
+
+import "google/protobuf/timestamp.proto";
+import "google/api/annotations.proto";
+
+message MonthlyBill{
+  string month=1;
+  int32 breakfast_count=2;
+  int32 lunch_count=3;
+  int32 dinner_count=4;
+  float total_bill=5;
+}
+
+message MonthBillRequest {
+  int32 roll=1;
+  string semester_id=2;
+  string month=3;
+}
+
+message MonthBillResponse {
+  int32 breakfast_count=1;
+  int32 lunch_count=2;
+  int32 dinner_count=3;
+  float total_bill=4;
+}
+
+message SemesterBillRequest {
+  int32 roll=1;
+  int32 semester_id=2;
+}
+
+message SemesterBillResponse {
+  int32 semester_breakfast_count=1;
+  int32 semester_lunch_count=2;
+  int32 semester_dinner_count=3;
+  repeated MonthlyBill monthly_bill=4;
+  float total_bill=5;
+}
+
+message CancelMealRequest{
+  int32 roll=1;
+  int32 semester_id=2;
+  string meal=3;
+  google.protobuf.Timestamp date=4;
+}
+
+message CancelMealResponse{}
+
+message CancelledMealsCountRequest{
+  int32 roll=1;
+  int32 semester_id=2;
+  string month=3;
+}
+
+message CancelledMealsCountResponse{
+  int32 cancelled_breakfast_count=1;
+  int32 cancelled_lunch_count=2;
+  int32 cancelled_dinner_count=3;
+  float total_cancelled_meal_count=4;
+}
+
+service OrderService {
+  rpc GetMonthBill(MonthBillRequest) returns (MonthBillResponse){
+    option(google.api.http)={
+      get: "/v1/students/{roll}/bill/{semester_id}/{month}"
+    };
+  }
+  rpc GetSemesterBill(SemesterBillRequest) returns (SemesterBillResponse){
+    option(google.api.http)={
+      get: "/v1/students/{roll}/bill/{semester_id}"
+    };
+  }
+  rpc CancelMeal(CancelMealRequest) returns (CancelMealResponse){
+    option(google.api.http)={
+      post: "/v1/students/{roll}/bill/{semester_id}"
+      body:"*"
+    };
+  }
+  rpc GetCancelledMealsCount(CancelledMealsCountRequest) returns (CancelledMealsCountResponse){
+    option(google.api.http)={
+      get: "/v1/students/{roll}/meal/cancelled-count/{semester_id}/{month}"
+    };
+  }
+}
